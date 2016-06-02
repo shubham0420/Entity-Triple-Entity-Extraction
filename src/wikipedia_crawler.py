@@ -12,6 +12,7 @@ import time
 import urllib2
 import data_formater
 import  re
+
 class Wiki_to_Document():
     
     def __init__(self,wikilink):
@@ -43,16 +44,15 @@ class Wiki_to_Document():
         
          
 
-def counting(wikilink):
-            outputFile = open(os.path.join('/home/top-coder/ZIIITH_Project/test',wikilink[29:]+"_wikipedia.txt"),'w')      
-            tmp = Wiki_to_Document(wikilink)
-            tmp.Access_Wikipedia()
-            tmp.HTML_to_Data()
+def counting(wikilink,count):
+            
+            outputFile = open(os.path.join('/home/top-coder/ZIIITH_Project/test',str(count)+"_wikipedia.txt"),'w')                 
+            tmp = Wiki_to_Document(wikilink)           
+            tmp.Access_Wikipedia()           
+            tmp.HTML_to_Data()         
             for Sentence in tmp.Document:
                     #print Sentence
                     outputFile.write(Sentence.encode('ascii', 'ignore'))
-                    outputFile.write('\n')  
-             
-            outputFile.close()
-           # count = chr(ord(count)+1)
-
+                    outputFile.write('\n')            
+            outputFile.close()        
+            
