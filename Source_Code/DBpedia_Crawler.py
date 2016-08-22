@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-@author: Akshay Gulati, Nitin Gupta, Shubham Sharma 
-@contact: 
+@author: Shubham Sharma ,Akshay Gulati, Nitin Gupta.
+@contact: sharma.shubham6522@gmail.com
 @topic: Entity-Relation-Entity triple extraction
 @description: 
 """
